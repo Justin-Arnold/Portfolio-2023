@@ -1,3 +1,6 @@
 <template>
-    <NuxtPage />
+    <AtomPageFrame>
+        <OrganismSiteHeader></OrganismSiteHeader>
+        <NuxtPage />
+    </AtomPageFrame>
 </template>
