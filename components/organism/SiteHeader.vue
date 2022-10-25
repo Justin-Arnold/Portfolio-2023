@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between items-center h-10 sticky top-0">
+    <div class="flex justify-between items-center h-10 sticky top-0 text-white">
         <div>
             <h2 class="font-bold text-lg">Justin Arnold</h2>
         </div>
