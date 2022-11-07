@@ -1,158 +1,166 @@
 <template>
     <Teleport to="body">
-        <div>
-            <svg class="absolute wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,224L18.5,197.3C36.9,171,74,117,111,106.7C147.7,96,185,128,222,144C258.5,160,295,160,332,170.7C369.2,181,406,203,443,202.7C480,203,517,181,554,144C590.8,107,628,53,665,42.7C701.5,32,738,64,775,74.7C812.3,85,849,75,886,74.7C923.1,75,960,85,997,90.7C1033.8,96,1071,96,1108,101.3C1144.6,107,1182,117,1218,122.7C1255.4,128,1292,128,1329,122.7C1366.2,117,1403,107,1422,101.3L1440,96L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave2 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,32L18.5,32C36.9,32,74,32,111,37.3C147.7,43,185,53,222,96C258.5,139,295,213,332,202.7C369.2,192,406,96,443,58.7C480,21,517,43,554,69.3C590.8,96,628,128,665,117.3C701.5,107,738,53,775,32C812.3,11,849,21,886,21.3C923.1,21,960,11,997,42.7C1033.8,75,1071,149,1108,192C1144.6,235,1182,245,1218,218.7C1255.4,192,1292,128,1329,90.7C1366.2,53,1403,43,1422,37.3L1440,32L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,160L18.5,154.7C36.9,149,74,139,111,117.3C147.7,96,185,64,222,42.7C258.5,21,295,11,332,37.3C369.2,64,406,128,443,170.7C480,213,517,235,554,208C590.8,181,628,107,665,69.3C701.5,32,738,32,775,74.7C812.3,117,849,203,886,213.3C923.1,224,960,160,997,154.7C1033.8,149,1071,203,1108,229.3C1144.6,256,1182,256,1218,256C1255.4,256,1292,256,1329,256C1366.2,256,1403,256,1422,256L1440,256L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,224L18.5,197.3C36.9,171,74,117,111,106.7C147.7,96,185,128,222,144C258.5,160,295,160,332,170.7C369.2,181,406,203,443,202.7C480,203,517,181,554,144C590.8,107,628,53,665,42.7C701.5,32,738,64,775,74.7C812.3,85,849,75,886,74.7C923.1,75,960,85,997,90.7C1033.8,96,1071,96,1108,101.3C1144.6,107,1182,117,1218,122.7C1255.4,128,1292,128,1329,122.7C1366.2,117,1403,107,1422,101.3L1440,96L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,32L18.5,32C36.9,32,74,32,111,37.3C147.7,43,185,53,222,96C258.5,139,295,213,332,202.7C369.2,192,406,96,443,58.7C480,21,517,43,554,69.3C590.8,96,628,128,665,117.3C701.5,107,738,53,775,32C812.3,11,849,21,886,21.3C923.1,21,960,11,997,42.7C1033.8,75,1071,149,1108,192C1144.6,235,1182,245,1218,218.7C1255.4,192,1292,128,1329,90.7C1366.2,53,1403,43,1422,37.3L1440,32L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,160L18.5,154.7C36.9,149,74,139,111,117.3C147.7,96,185,64,222,42.7C258.5,21,295,11,332,37.3C369.2,64,406,128,443,170.7C480,213,517,235,554,208C590.8,181,628,107,665,69.3C701.5,32,738,32,775,74.7C812.3,117,849,203,886,213.3C923.1,224,960,160,997,154.7C1033.8,149,1071,203,1108,229.3C1144.6,256,1182,256,1218,256C1255.4,256,1292,256,1329,256C1366.2,256,1403,256,1422,256L1440,256L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,224L18.5,197.3C36.9,171,74,117,111,106.7C147.7,96,185,128,222,144C258.5,160,295,160,332,170.7C369.2,181,406,203,443,202.7C480,203,517,181,554,144C590.8,107,628,53,665,42.7C701.5,32,738,64,775,74.7C812.3,85,849,75,886,74.7C923.1,75,960,85,997,90.7C1033.8,96,1071,96,1108,101.3C1144.6,107,1182,117,1218,122.7C1255.4,128,1292,128,1329,122.7C1366.2,117,1403,107,1422,101.3L1440,96L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,32L18.5,32C36.9,32,74,32,111,37.3C147.7,43,185,53,222,96C258.5,139,295,213,332,202.7C369.2,192,406,96,443,58.7C480,21,517,43,554,69.3C590.8,96,628,128,665,117.3C701.5,107,738,53,775,32C812.3,11,849,21,886,21.3C923.1,21,960,11,997,42.7C1033.8,75,1071,149,1108,192C1144.6,235,1182,245,1218,218.7C1255.4,192,1292,128,1329,90.7C1366.2,53,1403,43,1422,37.3L1440,32L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave9 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,160L18.5,154.7C36.9,149,74,139,111,117.3C147.7,96,185,64,222,42.7C258.5,21,295,11,332,37.3C369.2,64,406,128,443,170.7C480,213,517,235,554,208C590.8,181,628,107,665,69.3C701.5,32,738,32,775,74.7C812.3,117,849,203,886,213.3C923.1,224,960,160,997,154.7C1033.8,149,1071,203,1108,229.3C1144.6,256,1182,256,1218,256C1255.4,256,1292,256,1329,256C1366.2,256,1403,256,1422,256L1440,256L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-            <svg class="absolute wave10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" d="M0,224L18.5,197.3C36.9,171,74,117,111,106.7C147.7,96,185,128,222,144C258.5,160,295,160,332,170.7C369.2,181,406,203,443,202.7C480,203,517,181,554,144C590.8,107,628,53,665,42.7C701.5,32,738,64,775,74.7C812.3,85,849,75,886,74.7C923.1,75,960,85,997,90.7C1033.8,96,1071,96,1108,101.3C1144.6,107,1182,117,1218,122.7C1255.4,128,1292,128,1329,122.7C1366.2,117,1403,107,1422,101.3L1440,96L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-            </svg>
-        </div>
+        <canvas id="c" class="absolute"></canvas>
     </Teleport>
 </template>
 
 <script setup lang="ts">
 
+const waveCanvas = ref(null)
+
+onBeforeMount(() => {
+    var c = document.getElementById('c'),
+        ctx = c.getContext('2d'),
+        cw = c.width = window.innerWidth,
+        ch = c.height = window.innerHeight,
+        points = [],
+        tick = 0,
+        opt = {
+        count: 5,
+        range: {
+            x: 20,
+            y: 40
+        },
+        duration: {
+            min: 20,
+            max: 40
+        },
+        thickness: 10,
+        strokeColor: '#444',
+        level: .35,
+        curved: true
+        },
+        rand = function(min, max){
+            return Math.floor( (Math.random() * (max - min + 1) ) + min);
+        },
+        ease = function (t, b, c, d) {
+            if ((t/=d/2) < 1) return c/2*t*t + b;
+            return -c/2 * ((--t)*(t-2) - 1) + b;
+    };
+
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = opt.thickness;
+    ctx.strokeStyle = opt.strokeColor;
+
+    var Point = function(config){
+        this.anchorX = config.x;
+        this.anchorY = config.y;
+        this.x = config.x;
+        this.y = config.y;
+        this.setTarget();
+    };
+
+    Point.prototype.setTarget = function(){
+        this.initialX = this.x;
+        this.initialY = this.y;
+        this.targetX = this.anchorX + rand(0, opt.range.x * 2) - opt.range.x;
+        this.targetY = this.anchorY + rand(0, opt.range.y * 2) - opt.range.y;
+        this.tick = 0;
+        this.duration = rand(opt.duration.min, opt.duration.max);
+    }
+
+    Point.prototype.update = function(){
+        var dx = this.targetX - this.x;
+        var dy = this.targetY - this.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+
+        if(Math.abs(dist) <= 0){
+            this.setTarget();
+        } else {
+            var t = this.tick;
+            var b = this.initialY;
+            var c = this.targetY - this.initialY;
+            var d = this.duration;
+            this.y = ease(t, b, c, d);
+
+            b = this.initialX;
+            c = this.targetX - this.initialX;
+            d = this.duration;
+            this.x = ease(t, b, c, d);
+
+            this.tick++;
+        }
+    };
+
+    Point.prototype.render = function(){
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, 3, 0, Math.PI * 2, false);
+        ctx.fillStyle = '#000';
+        ctx.fill();
+    };
+
+    var updatePoints = function(){
+        var i = points.length;
+        while(i--){
+            points[i].update();
+        }
+    };
+
+    var renderPoints = function(){
+        var i = points.length;
+        while(i--){
+            points[i].render();
+        }
+    };
+
+
+    var renderShape = function(){
+        ctx.beginPath();
+        var pointCount = points.length;
+        ctx.moveTo(points[0].x, points[0].y);
+        var i;
+        for (i = 0; i < pointCount - 1; i++) {
+            var c = (points[i].x + points[i + 1].x) / 2;
+            var d = (points[i].y + points[i + 1].y) / 2;
+            ctx.quadraticCurveTo(points[i].x, points[i].y, c, d);
+        }
+        ctx.lineTo(-opt.range.x - opt.thickness, ch + opt.thickness);
+        ctx.lineTo(cw + opt.range.x + opt.thickness, ch + opt.thickness);
+        ctx.closePath();
+        ctx.fillStyle = 'hsl('+(tick/2)+', 80%, 60%)';
+        ctx.fill();
+        ctx.stroke();
+    };
+    var clear = function(){
+        ctx.clearRect(0, 0, cw, ch);
+    };
+
+    var loop = function(){
+        window.requestAnimFrame(loop, c);
+        tick++;
+        clear();
+        updatePoints();
+        renderShape();
+        //renderPoints();
+    };
+
+    var i = opt.count + 2;
+    var spacing = (cw + (opt.range.x * 2)) / (opt.count-1);
+    while(i--){
+    points.push(new Point({
+        x: (spacing * (i - 1)) - opt.range.x,
+        y: ch - (ch * opt.level)
+    }));
+    }
+
+    window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
+
+    loop();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
-<style scoped>
-
-svg {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.05));
-}
-
-svg:before {
-    border: 2px solid blue;
-    content: "";
-    height: 100px;
-    margin: -6px;
-    padding: 4px;
-    position: absolute;
-    width: 100px;
-    z-index: -1;
-}
-.wave1 {
-    animation-delay: 0s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-.wave2
-{
-    animation-delay: -2s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-.wave3
-{
-    animation-delay: -4s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-.wave4 {
-    animation-delay: -6s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-.wave5
-{
-    animation-delay: -8s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-.wave6
-{
-    animation-delay: -10s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-
-.wave7 {
-    animation-delay: -12s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-.wave8
-{
-    animation-delay: -14s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-.wave9
-{
-    animation-delay: -16s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-.wave10 {
-    animation-delay: -18s;
-    animation-name: example, color;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear, ease-in-out;
-}
-
-
-@keyframes example {
-    0%   {
-        top: 100%;
-        transform: scale(1);
-    }
-    100% {
-        top: -40%;
-        transform: scale(3);
-
-    }
-}
-
-@keyframes color {
-    0%   {
-        fill: #171717;
-    }
-    100% {
-        fill: #648357;
-    }
-}
-
-</style>
