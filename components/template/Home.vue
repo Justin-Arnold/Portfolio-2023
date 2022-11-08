@@ -3,8 +3,10 @@
     <section class="h-screen w-full">
         <OrganismCallToAction />
     </section>
-    <!-- scroll creator -->
-    <div class="h-[2000px]" ></div>
+    <!-- about me -->
+    <section class="h-screen w-full">
+        <OrganismAboutMe />
+    </section>
 </template>
 
 <script setup lang="ts">
