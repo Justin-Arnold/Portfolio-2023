@@ -1,5 +1,5 @@
 <template>
-    <div class="h-full flex flex-col justify-between">
+    <div class="h-full flex flex-col justify-between overflow-y-clip">
         <div class="h-full grid place-items-center">
             <div class="flex flex-col gap-5 text-white">
                 <h2 class="text-6xl font-bold">I am Attention Grabbing</h2>
