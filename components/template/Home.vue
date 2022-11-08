@@ -1,5 +1,4 @@
 <template>
-    <organism-waves-animation />
     <!-- Above The Fold -->
     <section class="h-screen w-full">
         <OrganismCallToAction />
