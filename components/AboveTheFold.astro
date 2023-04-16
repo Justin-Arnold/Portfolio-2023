@@ -2,10 +2,9 @@
 import Bubbles from "./Bubbles.vue";
 ---
 <div class="h-screen relative bg-gradient-to-r from-blue-400 to-purple-400">
-
-    <!-- <span class="max-w-[60ch] flex flex-col gap-4">
+    <div class="max-w-[60ch] flex flex-col gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h1 class="text-4xl font-bold">This is Above the Fold</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt eos animi aut deserunt quis! Reprehenderit, vitae? Ex illo, explicabo esse ipsam minima cum quisquam culpa perferendis veritatis in minus totam.</p>
-    </span> -->
-    <Bubbles class="absolute top-0 left-0 h-full-full" client:only />
+    </div>
+    <Bubbles class="absolute top-0 left-0 h-full" client:only />
 </div>
