@@ -1,5 +1,6 @@
 ---
 import Bubbles from "./Bubbles.vue";
+import WavesAnimation from "./WavesAnimation.vue";
 ---
 <div class="h-screen relative bg-gradient-to-r from-blue-400 to-purple-400">
     <div class="max-w-[60ch] flex flex-col gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -7,4 +8,5 @@ import Bubbles from "./Bubbles.vue";
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt eos animi aut deserunt quis! Reprehenderit, vitae? Ex illo, explicabo esse ipsam minima cum quisquam culpa perferendis veritatis in minus totam.</p>
     </div>
     <Bubbles class="absolute top-0 left-0 h-full" client:only />
+    <WavesAnimation class="absolute bottom-0 left-0 -translate-y-[100$]" client:only />
 </div>
