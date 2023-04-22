@@ -5,10 +5,100 @@ import Logo from './Logo.astro'
     <div class="flex justify-between relative h-12 align-center py-1">
             <Logo></Logo>
         <div class="flex gap-4">
-            <button>Home</button>
+            <span class="bg-white dark:bg-gray-800 transition-all duration-500">
+                <div class="container mx-auto">
+                  <div class="fixed top-0 right-0 m-4">
+                    <div class="circle hidden absolute w-0 h-0 bg-white dark:bg-gray-800 rounded-full overflow-hidden"></div>
+                    <label for="darkModeToggle" class="flex items-center cursor-pointer">
+                      <div class="relative">
+                        <input type="checkbox" id="darkModeToggle" class="sr-only">
+                        <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+                        <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform duration-300"></div>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- Your other content here -->
+                </div>
+            </span>
+            <!-- <button>Home</button>
             <button>About</button>
             <button>Blog</button>
-            <button>Contact</button>
+            <button class="border border-white rounded px-2 text-white">
+
+            </button> -->
         </div>
     </div>
 </div>
+<script>
+    import { gsap } from "gsap";
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const isDarkMode = () => {
+            return localStorage.theme === "dark";
+        };
+        console.log('test')
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        if(!darkModeToggle) return;
+        console.log('test2')
+        const animateCircle = (circle, scale, onComplete) => {
+            console.log('animCircle')
+            gsap.to(circle, {
+                duration: 0.5,
+                scale: scale,
+                ease: "power2.out",
+                onComplete: onComplete,
+            });
+        };
+
+        darkModeToggle.addEventListener("change", () => {
+            console.log('changed')
+            const circle = document.querySelector(".circle");
+            if(!circle) return;
+            console.log('test3')
+            circle.classList.remove("hidden");
+
+            // Calculate the scale needed for the circle to cover the entire viewport
+            const scale = Math.sqrt(
+                Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
+            );
+
+  // Animate the circle
+            animateCircle(circle, scale, () => {
+                console.log('animCircle2')
+                document.documentElement.classList.toggle("dark");
+                localStorage.theme = isDarkMode() ? "light" : "dark";
+                animateCircle(circle, 0, () => {
+                    circle.classList.add("hidden");
+                    });
+                });
+            });
+
+
+        if (isDarkMode()) {
+            document.documentElement.classList.add("dark");
+            // darkModeToggle!.checked = true;
+        }
+    });
+
+
+</script>
+
+<style>
+  .dark-mode-transition {
+    transition: background-color 500ms, color 500ms;
+  }
+
+/* Styling for the toggle switch */
+input:checked ~ .dot {
+  transform: translateX(100%);
+}
+
+/* Dark mode styles */
+.dark input:checked ~ .dot {
+  background-color: white;
+}
+
+.dark .block {
+  background-color: gray;
+}
+</style>
