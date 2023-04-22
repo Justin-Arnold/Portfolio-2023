@@ -8,7 +8,7 @@
         display: grid;
         grid-template-columns:
             1fr
-            min(100ch, 100%)
+            min(800px, 100%)
             1fr;
     }
     .wrapper > * {
