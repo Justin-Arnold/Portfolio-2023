@@ -1,35 +1,7 @@
----
-const companies: {name: string, url: string}[] = [
-    {
-        name: 'Extra Space Storage',
-        url: 'https://images.ctfassets.net/fynvlmu126fq/3MhRypLbWA7WwzbBFCK9R3/0f9861a14e069072a5a0a165ee257ba0/ess-logo.svg'
-    }, {
-        name: 'eWebData',
-        url: 'https://ewebdata.com/wp-content/uploads/2022/08/Ewebdata-logo-updated-1-e1661457259624.png'
-    }, {
-        name: 'Internetwork Engineering',
-        url: 'https://www.ineteng.com/hubfs/IE-Logo-White-01.png'
-    } , {
-        name: 'Gradecam',
-        url: 'https://gradecam.com/wp-content/uploads/2020/07/logo-white.png'
-    } , {
-        name: 'University of Tennessee Medical Center',
-        url: 'https://www.utmedicalcenter.org/themes/custom/finch/logo.svg'
-    }
-]
----
-<div class="w-full h-screen flex flex-col justify-center border-2 items-center bg-slate-200">
+<div class="w-full h-screen flex flex-col justify-center items-start">
     <span class="max-w-[60ch] flex flex-col gap-4 mb-4">
         <h1 class="text-3xl font-bold">Nice to Meet you!</h1>
         <p>Back in 2015, I embarked on an exciting journey as a software engineer, blending my passions for both design and technology. Fast-forward eight years, and I've had the pleasure of collaborating with some truly amazing folks, crafting memorable experiences and building platforms that cater to the needs of businesses and everyday users alike. My heart is set on designing intuitive, inclusive, and visually stunning creations that not only turn heads but also stand the test of time in their reliability and maintainability. Let's create something beautiful together!</p>
     </span>
-    <span class="text-xl text-slate-800 font-semibold">Companies I've worked with:</span>
-    <div class="grid grid-cols-3 gap-2">
-        {companies.map((company: any) =>
-            <span class="flex justify-center relative p-2 overflow-hidden">
-                <img src={company.url} alt={company.name} class="h-12"/>
-            </span>
-        )}
-    </div>
 </div>
 

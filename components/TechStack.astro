@@ -1,6 +1,104 @@
-<div class="w-full h-screen grid place-items-center bg-blue">
-    <span class="max-w-[60ch] flex flex-col gap-4">
-        <h1 class="text-4xl font-bold">This is what I use</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt eos animi aut deserunt quis! Reprehenderit, vitae? Ex illo, explicabo esse ipsam minima cum quisquam culpa perferendis veritatis in minus totam.</p>
+---
+const companies: {name: string, url: string}[] = [
+    {
+        name: 'Extra Space Storage',
+        url: 'https://images.ctfassets.net/fynvlmu126fq/3MhRypLbWA7WwzbBFCK9R3/0f9861a14e069072a5a0a165ee257ba0/ess-logo.svg'
+    }, {
+        name: 'eWebData',
+        url: 'https://ewebdata.com/wp-content/uploads/2022/08/Ewebdata-logo-updated-1-e1661457259624.png'
+    }, {
+        name: 'Internetwork Engineering',
+        url: 'https://www.ineteng.com/hubfs/IE-Logo-White-01.png'
+    } , {
+        name: 'Gradecam',
+        url: 'https://gradecam.com/wp-content/uploads/2020/07/logo-white.png'
+    } , {
+        name: 'University of Tennessee Medical Center',
+        url: 'https://www.utmedicalcenter.org/themes/custom/finch/logo.svg'
+    }
+]
+---
+<script>
+    document.querySelector('[data-tab-1-button]')!.addEventListener('click', () => switchTab(0));
+    document.querySelector('[data-tab-2-button]')!.addEventListener('click', () => switchTab(1));
+    document.querySelector('[data-tab-3-button]')!.addEventListener('click', () => switchTab(2));
+    document.querySelector('[data-tab-4-button]')!.addEventListener('click', () => switchTab(3));
+    document.querySelector('[data-tab-5-button]')!.addEventListener('click', () => switchTab(4));
+    document.querySelector('[data-tab-6-button]')!.addEventListener('click', () => switchTab(5));
+
+    function switchTab(tabIndex: number) {
+        let tabButtons = document.getElementsByClassName('tab-button');
+        let tabContents = document.getElementsByClassName('tab-content');
+
+        for (let i = 0; i < tabButtons.length; i++) {
+            if (i === tabIndex) {
+                tabButtons[i].classList.add('active');
+                tabContents[i].classList.add('visible');
+            } else {
+                tabButtons[i].classList.remove('active');
+                tabContents[i].classList.remove('visible');
+            }
+        }
+    }
+</script>
+<!-- <div class="w-full h-screen grid place-items-center bg-blue">
+    <span class="text-xl text-slate-800 font-semibold">Companies I've worked with:</span>
+    <div class="grid grid-cols-3 gap-2">
+        {companies.map((company: any) =>
+            <span class="flex justify-center relative p-2 overflow-hidden">
+                <img src={company.url} alt={company.name} class="h-12"/>
+            </span>
+        )}
+    </div>
+</div> -->
+<div class="w-full h-screen flex flex-col justify-center items-start">
+    <span class="max-w-[60ch] flex flex-col gap-4 mb-4">
+        <h1 class="text-3xl font-bold">Companies I've worked with:</h1>
+        <div class="flex">
+            <div class="tab-buttons flex flex-col">
+                <div data-tab-1-button class="tab-button active">Gradecam</div>
+                <div data-tab-2-button class="tab-button">NuCamp</div>
+                <div data-tab-3-button class="tab-button">U.T. Medical Center</div>
+                <div data-tab-4-button class="tab-button">Internetwork Engineering</div>
+                <div data-tab-5-button class="tab-button">eWebData</div>
+                <div data-tab-6-button class="tab-button">Storage Express</div>
+            </div>
+            <div class="tab-contents h-ful w-80">
+                <div data-tab-1-content class="tab-content visible">This is the content of Tab 1.</div>
+                <div data-tab-2-content class="tab-content">This is the content of Tab 2.</div>
+                <div data-tab-3-content class="tab-content">This is the content of Tab 3.</div>
+                <div data-tab-4-content class="tab-content">This is the content of Tab 4.</div>
+                <div data-tab-5-content class="tab-content">This is the content of Tab 5.</div>
+                <div data-tab-6-content class="tab-content">This is the content of Tab 6.</div>
+            </div>
+        </div>
     </span>
 </div>
+
+<style>
+    .tab-buttons {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .tab-button {
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+
+        .tab-content {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 100%;
+        }
+
+        .active {
+            background-color: #ccc;
+        }
+
+        .visible {
+            display: block;
+        }
+</style>
