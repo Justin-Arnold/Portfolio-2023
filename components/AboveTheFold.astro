@@ -3,13 +3,15 @@ import Bubbles from "./Bubbles.vue";
 import WavesAnimation from "./WavesAnimation.vue";
 ---
 <div class="h-screen relative bg-gradient-to-r from-blue-400 to-purple-400">
-    <div class="absolute wrapper h-screen w-screen pb-32">
-        <div class="flex flex-col justify-center items-start">
-            <!-- <div class="text-[50px] text-slate-800/60">Hi There, I'm</div> -->
-            <h1 class="text-[80px] font-bold -my-6 text-white">Justin Arnold</h1>
-            <h2 class="text-[50px]  text-slate-800/60">Software Engineer & Designer</h2>
-            <p class="text-xl text-white max-w-[40ch]">I am passionate about solving users problems in beautiful ways. Curious by nature and always learning.</p>
-            <button class="rounded bg-white/80 p-3 mt-2 text-slate-800/80">Get in Touch</button>
+    <div class="absolute wrapper h-screen w-screen">
+        <div class="h-full w-full grid place-items-center">
+            <div class="flex flex-col justify-center items-start">
+                <!-- <div class="text-[50px] text-slate-800/60">Hi There, I'm</div> -->
+                <h1 class="text-[80px] font-bold -my-6 text-white">Justin Arnold</h1>
+                <h2 class="text-[50px]  text-slate-800/60">Software Engineer & Designer</h2>
+                <p class="text-xl text-white max-w-[40ch]">I am passionate about solving users problems in beautiful ways. Curious by nature and always learning.</p>
+                <button class="rounded bg-white/80 p-3 mt-2 text-slate-800/80">Get in Touch</button>
+            </div>
         </div>
     </div>
     <Bubbles class="absolute top-0 left-0 h-full" client:only />
