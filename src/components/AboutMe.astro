@@ -1,3 +1,7 @@
+---
+import { Image } from 'astro:assets';
+import headshot from '../assets/headhot.png';
+---
 <div class="w-full flex flex-col justify-center items-start py-64">
     <div class="flex w-full items-center mb-4 gap-2">
         <h1 class="text-3xl font-bold whitespace-nowrap">Nice to Meet you!</h1>
@@ -9,7 +13,7 @@
         </span>
         <div class="h-full aspect-square p-2 relative">
             <div class="h-[300px] w-[330px] absolute rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 -z-[1] aspect-square left-10 top-10"></div>
-            <img src="src/images/headhot.png" class="rounded-lg" width="350" height="350"/>
+            <Image src={headshot} class="rounded-lg" width="350" height="350" alt="headshot"/>
         </div>
     </div>
 </div>
