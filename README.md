@@ -1,10 +1,9 @@
-# 🚀 My 2023 Portfolio Site 🌐
+# 🚀 My 2023 Portfolio Site [WIP] 🌐
 
-👋 Hi there! This is the rough draft of my **2023 portfolio site**. I'm excited to showcase my skills and projects as a developer! Feel free to explore the code and provide any feedback or suggestions you may have. 🤗
+👋 Hi there! This is the rough draft of my **2023 portfolio site**. I look forward to doing this each year! Feel free to explore the code and provide any feedback or suggestions you may have. 🤗
 
 ## 📋 Table of Contents
 
-1. [About the Project](#about)
 2. [Built With](#built-with)
 3. [Installation & Setup](#installation)
 4. [Usage](#usage)
@@ -12,16 +11,10 @@
 6. [Contact](#contact)
 7. [Acknowledgements](#acknowledgements)
 
-## 📖 About the Project <a name="about"></a>
-
-In this portfolio site, I've designed a modern and engaging user interface to showcase my coding skills, projects, and achievements. By the end of 2023, I aim to have a fully-functional and polished portfolio site that highlights my expertise in web development.
-
 ## 🛠️ Built With <a name="built-with"></a>
 
-- [React](https://reactjs.org/)
-- [Next.js](https://nextjs.org/)
+- [Astro](https://astro.build/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Vercel](https://vercel.com/)
 
 ## 📥 Installation & Setup <a name="installation"></a>
 
