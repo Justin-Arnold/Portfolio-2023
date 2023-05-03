@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { onBeforeMount, ref, watchEffect } from 'vue';
+import { ref, watchEffect } from 'vue';
 
-const isDark = ref(false);
+const isDark = ref(true);
 
 watchEffect(() => {
     if (!isDark.value) {
