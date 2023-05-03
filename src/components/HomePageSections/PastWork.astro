@@ -1,40 +1,166 @@
+---
+const companies: {name: string, url: string}[] = [
+    {
+        name: 'Extra Space Storage',
+        url: 'https://images.ctfassets.net/fynvlmu126fq/3MhRypLbWA7WwzbBFCK9R3/0f9861a14e069072a5a0a165ee257ba0/ess-logo.svg'
+    }, {
+        name: 'eWebData',
+        url: 'https://ewebdata.com/wp-content/uploads/2022/08/Ewebdata-logo-updated-1-e1661457259624.png'
+    }, {
+        name: 'Internetwork Engineering',
+        url: 'https://www.ineteng.com/hubfs/IE-Logo-White-01.png'
+    } , {
+        name: 'Gradecam',
+        url: 'https://gradecam.com/wp-content/uploads/2020/07/logo-white.png'
+    } , {
+        name: 'University of Tennessee Medical Center',
+        url: 'https://www.utmedicalcenter.org/themes/custom/finch/logo.svg'
+    }
+]
+---
+<script>
+    document.querySelector('[data-tab-1-button]')!.addEventListener('click', () => switchTab(0));
+    document.querySelector('[data-tab-2-button]')!.addEventListener('click', () => switchTab(1));
+    document.querySelector('[data-tab-3-button]')!.addEventListener('click', () => switchTab(2));
+    document.querySelector('[data-tab-4-button]')!.addEventListener('click', () => switchTab(3));
+    document.querySelector('[data-tab-5-button]')!.addEventListener('click', () => switchTab(4));
+    document.querySelector('[data-tab-6-button]')!.addEventListener('click', () => switchTab(5));
+
+    function switchTab(tabIndex: number) {
+        let tabButtons = document.getElementsByClassName('tab-button');
+        let tabContents = document.getElementsByClassName('tab-content');
+
+        for (let i = 0; i < tabButtons.length; i++) {
+            if (i === tabIndex) {
+                tabButtons[i].classList.add('active');
+                tabContents[i].classList.add('visible');
+            } else {
+                tabButtons[i].classList.remove('active');
+                tabContents[i].classList.remove('visible');
+            }
+        }
+    }
+</script>
+<!-- <div class="w-full h-screen grid place-items-center bg-blue">
+    <span class="text-xl text-slate-800 font-semibold">Companies I've worked with:</span>
+    <div class="grid grid-cols-3 gap-2">
+        {companies.map((company: any) =>
+            <span class="flex justify-center relative p-2 overflow-hidden">
+                <img src={company.url} alt={company.name} class="h-12"/>
+            </span>
+        )}
+    </div>
+</div> -->
 <div class="w-full flex flex-col justify-center items-start">
     <div class="flex w-full items-center mb-4 gap-2">
-        <h1 class="text-3xl font-bold whitespace-nowrap">These are some of my recent projects</h1>
+        <h1 class="text-3xl font-bold whitespace-nowrap">Companies I've worked with</h1>
         <div class="bg-gradient-to-r from-blue-400 to-purple-500 h-[1px] rounded grow w-full"></div>
     </div>
-    <span class="flex flex-col gap-4 mb-4 w-full">
-        <div class="grid grid-cols-3 gap-4 text-white w-full">
-            <div class=" rounded bg-blue-400 text-lg font-semibold p-2">
-                <span>2023 Portfolio</span>
-                <div class="text-xs font-regular text-slate-800 p-1 flex flex-wrap">
-                    <span class="p-2 m-1 bg-slate-50 rounded">Astro</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Vue 3</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Typescript</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Tailwind</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Gsap</span>
-                </div>
+    <span class=" flex flex-col mb-48 h-[400px]">
+        <div class="flex gap-8">
+            <div class="tab-buttons flex flex-col w-fit shrink-0">
+                <div data-tab-1-button class="tab-button active">Gradecam</div>
+                <div data-tab-2-button class="tab-button">NuCamp</div>
+                <div data-tab-3-button class="tab-button">eWebData</div>
+                <div data-tab-4-button class="tab-button">U.T. Medical Center</div>
+                <div data-tab-5-button class="tab-button">Storage Express</div>
+                <div data-tab-6-button class="tab-button">Misc. Freelancng</div>
             </div>
-            <div class=" rounded bg-gradient-to-r from-blue-400 to-purple-500 text-lg font-semibold p-2">
-                <span>Beat Sync</span>
-                <div class="text-xs font-regular text-slate-800 p-1 flex flex-wrap">
-                    <span class="p-2 m-1 bg-slate-50 rounded">Nuxt 3</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Typescript</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Spotify API</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Spotify Player SDK</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Tailwind</span>
+            <div class="tab-contents h-full">
+                <div data-tab-1-content class="tab-content visible -mt-1">
+                    <h4 class="text-xl">Software Engineer</h4>
+                    <p class="text-slate-400 text-sm">Feb 2022 - Present</p>
+                    <br/>
+                    <ul class="list-disc w-full">
+                        <li>Redisgned existing component library arcitexture resulting in a 4x increase in dev enviorment performance and a 80% smalled bundle size.</li>
+                        <li>Migrated main product from AngularJS to Vue 3, with a strong focus on reducing complexity of the codebase to increase readability and maintainability.</li>
+                        <li>Designed and Prototyped out a complete redesign of the main product focusing on simplifying workflows and increasing ease to learn.</li>
+                        <li>Created and maintained documentation for the component library and design system using Storybook</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="max-h-200px aspect-square rounded bg-purple-500 text-lg font-semibold p-2">
-                <span>Gradient X</span>
-                <div class="text-xs font-regular text-slate-800 p-1 flex flex-wrap">
-                    <span class="p-2 m-1 bg-slate-50 rounded">Nuxt 3</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Typescript</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">PrimeVue</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Pinia</span>
-                    <span class="p-2 m-1 bg-slate-50 rounded">Tailwind</span>
+                <div data-tab-2-content class="tab-content -mt-1">
+                    <h4 class="text-xl">Course Instructor</h4>
+                    <p class="text-slate-400 text-sm">December 2021 - February 2023</p>
+                    <br/>
+                    <ul class="list-disc w-full">
+                        <li>Instructed over 60 different students across 5 courses.</li>
+                        <li>Taught several different courses including Web Development Fundamentals and Intro to Data structures and Algorithms</li>
+                        <li>Converted ciriculumn into highly engaging presentations and activities to foster an enjoyment for the work.</li>
+                        <li>Maintained a 4.98 ⭐ rating across all reviews from all lectures.</li>
+                    </ul>
+                </div>
+                <div data-tab-3-content class="tab-content">
+                    <h4 class="text-xl">Software Devloper</h4>
+                    <p class="text-slate-400 text-sm">June 2021 - December 2021</p>
+                    <br/>
+                    <ul class="list-disc w-full">
+                        <li>Rediesigned and maintained a web application used to collect and agregate visitor data for car dealers to rank them in a subsequent lead manegment platform.</li>
+                        <li>Created an API for dealers to use to integrate the data from this application in their own applications.</li>
+                        <li>Maintaind Java Springboot backend.</li>
+                        <li>Created the smart pixel used to track users across dealer sites.</li>
+                    </ul>
+                </div>
+                <div data-tab-4-content class="tab-content">
+                    <h4 class="text-xl">U.C Engineer</h4>
+                    <p class="text-slate-400 text-sm">August 2019 - May 2021</p>
+                    <br/>
+                    <ul class="list-disc w-full">
+                        <li>Created a python desktop applciation to act as an interface to the Cisco CUCM API so help similfy the workflows for the hospitals unified communications team.</li>
+                        <li>Developed a inventory manegment system for the U.C team to manage stock of phones and networking equiptment.</li>
+                        <li>Created Web interface to access the invetory manegment system from anywhere on or off the campus.</li>
+                        <li>Created web portal for feedbak from hospital staff during major campus wide phone system migration.</li>
+                    </ul>
+                </div>
+                <div data-tab-5-content class="tab-content">
+                    <h4 class="text-xl">IT Developer</h4>
+                    <p class="text-slate-400 text-sm">Augut 2015 - August 2019</p>
+                    <br/>
+                    <ul class="list-disc w-full">
+                        <li>Created IT Staff portal for managing all devices on all 200+ remote properties including DVR systems, wireless radios, kiosks, gate entry ststems and more.</li>
+                        <li>Designed and implemented a status dashboard that was displayed all through out the headquarters to monitor the online status of all crital equiptment on the remote properties to allow faster responce time to outages.</li>
+                        <li>Created a desktop application using python for a chess instructor to both play live games with his students remotely and chat with them during the game for instruction.</li>
+                        <li>Created an automation that goes through a users digital movie collection and adds meta-data for the movies scraped from web scraped meta-data to the movies, in addition to downloading trailers for each movie.</li>
+                    </ul>
+                </div>
+                <div data-tab-6-content class="tab-content">
+                    <h4 class="text-xl">Freelance Developer and Designer</h4>
+                    <p class="text-slate-400 text-sm">Augut 2015 - Present</p>
+                    <br/>
+                    <ul class="list-disc w-full">
+                        <li>Designed and Devloped a web application that allowed detailed searching, viewing, and editing of sheet music for the lute.</li>
+                        <li>Designed countless static content driven websites for various buisness' such as photography studios, coffee shops, blogs, and company home pages.</li>
+                        <li>Provided remote technical support to maintnence team for on-site hardware troubleshooting</li>
+                        <li>Created a desktop application to stream-line the process of configuring various hardware devices being sent to remote sites such as networking equiptment, cameras, and gate control boards.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </span>
 </div>
+
+<style>
+    .tab-buttons {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .tab-button {
+            padding: 10px;
+            cursor: pointer;
+            /* border: 1px solid #ccc; */
+        }
+
+        .tab-content {
+            display: none;
+            padding: 10px;
+            height: 100%;
+        }
+
+        .active {
+            @apply bg-gradient-to-r from-blue-400 to-purple-500 rounded text-white;
+        }
+
+        .visible {
+            display: block;
+        }
+</style>
