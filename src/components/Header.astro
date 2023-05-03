@@ -4,8 +4,8 @@ import Logo from './Logo.astro'
 <div class="fixed w-full top-0 h-fit z-[999] py-4 px-8">
     <div class="flex justify-between relative h-12 align-center py-1">
             <Logo></Logo>
-        <div class="flex gap-4">
-            <input class="toggle" type="checkbox">
+        <div class="flex gap-4 items-center">
+            <input class="appearance-none outline-none cursor-pointer w-[var(--size)] h-[var(--size)] rounded-full text-slate-50 transition-all duration-500 checked:scale-75" type="checkbox">
         </div>
     </div>
 </div>
@@ -15,24 +15,14 @@ import Logo from './Logo.astro'
 </script>
 
 <style>
-.toggle {
+input {
 	 --size: 2rem;
-	 appearance: none;
-	 outline: none;
-	 cursor: pointer;
-	 width: var(--size);
-	 height: var(--size);
 	 box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
-	 border-radius: 999px;
-	 color: #e6e6ff;
-	 transition: all 500ms;
 }
-.toggle:checked {
+input:checked {
 	 --ray-size: calc(var(--size) * -0.4);
 	 --offset-orthogonal: calc(var(--size) * 0.65);
 	 --offset-diagonal: calc(var(--size) * 0.45);
-	 transform: scale(0.75);
-	 color: #e6e6ff;
 	 box-shadow: inset 0 0 0 var(--size),
                calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
                var(--offset-orthogonal) 0 0 var(--ray-size),
@@ -42,12 +32,6 @@ import Logo from './Logo.astro'
                var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
                calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
                var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
-}
- .toggle {
-	 z-index: 1;
-}
- .toggle:checked ~ .background {
-	 --bg: white;
 }
 
 </style>
