@@ -1,37 +1,14 @@
 ---
 import Logo from './Logo.astro'
+import ThemeToggle from './themeToggle.vue';
 ---
+
 <div class="fixed w-full top-0 h-fit z-[999] py-4 px-8">
     <div class="flex justify-between relative h-12 align-center py-1">
             <Logo></Logo>
         <div class="flex gap-4 items-center">
-            <input class="appearance-none outline-none cursor-pointer w-[var(--size)] h-[var(--size)] rounded-full text-slate-50 transition-all duration-500 checked:scale-75" type="checkbox">
+            <ThemeToggle client:only></ThemeToggle>
         </div>
     </div>
 </div>
-<script>
 
-
-</script>
-
-<style>
-input {
-	 --size: 2rem;
-	 box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
-}
-input:checked {
-	 --ray-size: calc(var(--size) * -0.4);
-	 --offset-orthogonal: calc(var(--size) * 0.65);
-	 --offset-diagonal: calc(var(--size) * 0.45);
-	 box-shadow: inset 0 0 0 var(--size),
-               calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
-               var(--offset-orthogonal) 0 0 var(--ray-size),
-               0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
-               0 var(--offset-orthogonal) 0 var(--ray-size),
-               calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size),
-               var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
-               calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
-               var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
-}
-
-</style>
