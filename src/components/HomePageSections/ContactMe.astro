@@ -12,14 +12,14 @@
             <p>I'm eager to explore fresh, innovative collaborations and connect with like-minded individuals. If you're curious about my design or development skills, interested in joining forces on an open-source endeavor, or just want to drop a friendly hello, don't hesitate to reach out. I typically respond within a day, so let's start a conversation that could lead to something amazing!</p>
 
         </div>
-        <div class="flex flex-col grow">
-            <label>Name</label>
-            <input class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 mb-2">
-            <label>Email</label>
-            <input class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 mb-2"/>
-            <label>Message</label>
-            <textarea  class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 h-[200px] mb-4"/>
+        <form name="contact" data-netlify="true" action="/success" method="POST" class="flex flex-col grow">
+            <label for="name">Name</label>
+            <input id="name" name="name" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 mb-2">
+            <label for="email">Email</label>
+            <input id="email" name="email" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 mb-2"/>
+            <label for="body">Message</label>
+            <textarea id="body" name="body" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 h-[200px] mb-4"/>
             <button class="bg-gradient-to-r from-blue-400 to-purple-500 text-white font-semibold rounded p-2">Send</button>
-        </div>
+        </form>
     </span>
 </div>
