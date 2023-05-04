@@ -39,7 +39,6 @@ onMounted(() => {
         if (!canvasWrapper.value || !canvas.value) return;
         canvas.value.width = canvasWrapper.value.offsetWidth;
         canvas.value.height = canvasWrapper.value.offsetHeight;
-        initHeader();
     }
 
     function animate() {
