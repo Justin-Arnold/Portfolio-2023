@@ -1,0 +1,26 @@
+<script>
+    //get button with id close and add a click listener
+    const button = document.getElementById('close')
+    const banner = document.getElementById('banner')
+    button?.addEventListener('click', () => {
+        if(!banner) return
+        //hide the banner
+        banner.style.display = 'none';
+        //set the overflow-y to auto
+        document.body.style.overflowY = 'auto';
+    });
+</script>
+
+<div id="banner" class="bg-slate-50/20 backdrop-blur-xl fixed top-0 left-0 h-screen w-screen overflow-clip grid place-items-center z-[99999] pointer-events-none">
+    <div class="flex flex-col items-center gap-2">
+        <p class="text-5xl font-semibold">Under Construction</p>
+        <div id="close" class="rounded bg-gradient-to-r from-blue-400 to-purple-500 p-3 mt-2 text-white w-fit hover:scale-110 cursor-pointer pointer-events-auto">Visit Site</div>
+    </div>
+</div>
+
+<style>
+    body {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+</style>
