@@ -7,12 +7,12 @@ import headshot from '../../assets/headhot.png';
         <h1 class="text-3xl font-bold whitespace-nowrap">Nice to Meet you!</h1>
         <div class="bg-gradient-to-r from-blue-400 to-purple-500 h-[1px] rounded grow w-full"></div>
     </div>
-    <div class="flex w-full gap-8">
-        <span class="max-w-[60ch] flex flex-col gap-4">
-            <p class="max-w-[45ch]">Back in 2015, I embarked on an exciting journey as a software engineer, blending my passions for both design and technology. Fast-forward eight years, and I've had the pleasure of collaborating with some truly amazing folks, crafting memorable experiences and building platforms that cater to the needs of businesses and everyday users alike. My heart is set on designing intuitive, inclusive, and visually stunning creations that not only turn heads but also stand the test of time in their reliability and maintainability. Let's create something beautiful together!</p>
+    <div class="flex w-full gap-8 flex-col-reverse sm:flex-row items-center sm:items-start">
+        <span class="flex flex-col gap-4">
+            <p class="sm:max-w-[45ch]">Back in 2015, I embarked on an exciting journey as a software engineer, blending my passions for both design and technology. Fast-forward eight years, and I've had the pleasure of collaborating with some truly amazing folks, crafting memorable experiences and building platforms that cater to the needs of businesses and everyday users alike. My heart is set on designing intuitive, inclusive, and visually stunning creations that not only turn heads but also stand the test of time in their reliability and maintainability. Let's create something beautiful together!</p>
         </span>
-        <div class="h-full aspect-square p-2 relative">
-            <div class="h-[300px] w-[330px] absolute rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 -z-[1] aspect-square left-10 top-10"></div>
+        <div class="h-full aspect-square relative">
+            <div class="h-[94%] w-full absolute rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 -z-[1] aspect-square top-4 left-4 sm:left-10 sm:top-10"></div>
             <Image src={headshot} class="rounded-lg" width="350" height="350" alt="headshot"/>
         </div>
     </div>
