@@ -41,16 +41,7 @@ const companies: {name: string, url: string}[] = [
         }
     }
 </script>
-<!-- <div class="w-full h-screen grid place-items-center bg-blue">
-    <span class="text-xl text-slate-800 font-semibold">Companies I've worked with:</span>
-    <div class="grid grid-cols-3 gap-2">
-        {companies.map((company: any) =>
-            <span class="flex justify-center relative p-2 overflow-hidden">
-                <img src={company.url} alt={company.name} class="h-12"/>
-            </span>
-        )}
-    </div>
-</div> -->
+
 <div class="w-full flex flex-col justify-center items-start" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="400" data-aos-mirror="true">
     <div class="flex w-full items-center mb-4 gap-2">
         <h1 class="text-3xl font-bold whitespace-nowrap">Companies I've worked with</h1>
@@ -72,10 +63,10 @@ const companies: {name: string, url: string}[] = [
                     <p class="text-slate-400 text-sm">Feb 2022 - Present</p>
                     <br/>
                     <ul class="list-disc w-full">
-                        <li>Redisgned existing component library arcitexture resulting in a 4x increase in dev enviorment performance and a 80% smalled bundle size.</li>
-                        <li>Migrated main product from AngularJS to Vue 3, with a strong focus on reducing complexity of the codebase to increase readability and maintainability.</li>
-                        <li>Designed and Prototyped out a complete redesign of the main product focusing on simplifying workflows and increasing ease to learn.</li>
-                        <li>Created and maintained documentation for the component library and design system using Storybook</li>
+                        <li>Rearchitected current in-house component library doubling development environment performance, and reducing bundle size by 80%.</li>
+                        <li>Helped migrate the main product from AngularJS to Vue 3, with a strong focus on reducing complexity of the codebase to increase readability and maintainability.</li>
+                        <li>Designed several new product features, prioritizing user-friendly workflows, actionable data, and accelerated onboarding speed.</li>
+                        <li>Established and maintained documentation for the component library and design system using Storybook.</li>
                     </ul>
                 </div>
                 <div data-tab-2-content class="tab-content -mt-1">
@@ -83,32 +74,32 @@ const companies: {name: string, url: string}[] = [
                     <p class="text-slate-400 text-sm">December 2021 - February 2023</p>
                     <br/>
                     <ul class="list-disc w-full">
-                        <li>Instructed over 60 different students across 5 courses.</li>
-                        <li>Taught several different courses including Web Development Fundamentals and Intro to Data structures and Algorithms</li>
-                        <li>Converted ciriculumn into highly engaging presentations and activities to foster an enjoyment for the work.</li>
-                        <li>Maintained a 4.98 ⭐ rating across all reviews from all lectures.</li>
+                        <li>Instructed 60+ students spanning 5 courses.</li>
+                        <li>Delivered a range of courses, such as Web Development Fundamentals and Introduction to Data Structures and Algorithms.</li>
+                        <li>Transformed curricula into into highly engaging presentations and activities to foster a passion for learning.</li>
+                        <li>Consistently achieved a 4.98 ⭐ rating across all lectures, reflecting a commitment to high-quality instruction and student satisfaction.</li>
                     </ul>
                 </div>
                 <div data-tab-3-content class="tab-content">
-                    <h4 class="text-xl">Software Devloper</h4>
+                    <h4 class="text-xl">Software Engineer</h4>
                     <p class="text-slate-400 text-sm">June 2021 - December 2021</p>
                     <br/>
                     <ul class="list-disc w-full">
-                        <li>Rediesigned and maintained a web application used to collect and agregate visitor data for car dealers to rank them in a subsequent lead manegment platform.</li>
-                        <li>Created an API for dealers to use to integrate the data from this application in their own applications.</li>
-                        <li>Maintaind Java Springboot backend.</li>
-                        <li>Created the smart pixel used to track users across dealer sites.</li>
+                        <li>Updated and maintained a web application in Vue 3 for aggregating and enriching visitor data for car dealers for lead generation.</li>
+                        <li>Developed a user-friendly API, enabling dealers to seamlessly integrate data into subsequent lead management platforms.</li>
+                        <li>Maintained Java backend using Spring.</li>
+                        <li>Designed an intelligent tracking pixel to monitor users across dealer websites, used in the data enrichment process.</li>
                     </ul>
                 </div>
                 <div data-tab-4-content class="tab-content">
-                    <h4 class="text-xl">U.C Engineer</h4>
+                    <h4 class="text-xl">Software Engineer</h4>
                     <p class="text-slate-400 text-sm">August 2019 - May 2021</p>
                     <br/>
                     <ul class="list-disc w-full">
-                        <li>Created a python desktop applciation to act as an interface to the Cisco CUCM API so help similfy the workflows for the hospitals unified communications team.</li>
-                        <li>Developed a inventory manegment system for the U.C team to manage stock of phones and networking equiptment.</li>
-                        <li>Created Web interface to access the invetory manegment system from anywhere on or off the campus.</li>
-                        <li>Created web portal for feedbak from hospital staff during major campus wide phone system migration.</li>
+                        <li>Developed a Python desktop application as a user-friendly interface for the Cisco CUCM API, streamlining workflows for the hospital's Unified Communications team.</li>
+                        <li>Designed an inventory management system for efficient tracking and organization of phones and networking equipment within the U.C. team.</li>
+                        <li>Implemented a web interface for convenient remote access to the inventory management system both on and off-campus.</li>
+                        <li>Established a web portal to gather valuable feedback from hospital staff during a significant campus-wide phone system migration, ensuring a smooth transition.</li>
                     </ul>
                 </div>
                 <div data-tab-5-content class="tab-content">
@@ -116,10 +107,10 @@ const companies: {name: string, url: string}[] = [
                     <p class="text-slate-400 text-sm">Augut 2015 - August 2019</p>
                     <br/>
                     <ul class="list-disc w-full">
-                        <li>Created IT Staff portal for managing all devices on all 200+ remote properties including DVR systems, wireless radios, kiosks, gate entry ststems and more.</li>
-                        <li>Designed and implemented a status dashboard that was displayed all through out the headquarters to monitor the online status of all crital equiptment on the remote properties to allow faster responce time to outages.</li>
-                        <li>Created a desktop application using python for a chess instructor to both play live games with his students remotely and chat with them during the game for instruction.</li>
-                        <li>Created an automation that goes through a users digital movie collection and adds meta-data for the movies scraped from web scraped meta-data to the movies, in addition to downloading trailers for each movie.</li>
+                        <li>Developed an IT staff portal for comprehensive management of devices across 200+ remote properties, including DVR systems, wireless radios, kiosks, and gate entry systems.</li>
+                        <li>Created a status dashboard displayed at headquarters, enabling real-time monitoring and rapid response to outages of critical equipment at remote locations.</li>
+                        <li>Delivered remote technical support for maintenance teams, assisting with on-site hardware troubleshooting and ensuring optimal performance.</li>
+                        <li>Developed a desktop application to expedite the configuration process for diverse hardware devices, including networking equipment, cameras, and gate control boards, deployed at remote sites.</li>
                     </ul>
                 </div>
                 <div data-tab-6-content class="tab-content">
@@ -127,10 +118,10 @@ const companies: {name: string, url: string}[] = [
                     <p class="text-slate-400 text-sm">Augut 2015 - Present</p>
                     <br/>
                     <ul class="list-disc w-full">
-                        <li>Designed and Devloped a web application that allowed detailed searching, viewing, and editing of sheet music for the lute.</li>
-                        <li>Designed countless static content driven websites for various buisness' such as photography studios, coffee shops, blogs, and company home pages.</li>
-                        <li>Provided remote technical support to maintnence team for on-site hardware troubleshooting</li>
-                        <li>Created a desktop application to stream-line the process of configuring various hardware devices being sent to remote sites such as networking equiptment, cameras, and gate control boards.</li>
+                        <li>Built a web application for comprehensive search, view, and edit capabilities of lute sheet music, catering to musicians' specific needs.</li>
+                        <li>Crafted numerous static content-driven websites for diverse businesses, including photography studios, coffee shops, blogs, and company home pages.</li>
+                        <li>Developed a Python desktop application for a chess instructor to conduct live remote games with students while providing real-time chat instruction during gameplay.</li>
+                        <li>Implemented an automation process to enhance users' digital movie collections with web-scraped metadata and trailers, delivering a more immersive and informative viewing experience.</li>
                     </ul>
                 </div>
             </div>
