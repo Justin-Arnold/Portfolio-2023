@@ -1,9 +1,18 @@
 ---
 import MainHead from "../components/MainHead.astro";
+import Bubbles from "../components/Bubbles.vue";
+import WavesAnimation from "../components/WavesAnimation.vue";
 ---
 <html lang="en">
 	<MainHead></MainHead>
-	<body class="dark:bg-slate-800 text-slate-900 dark:text-white">
-        Message Sent!
+	<body class="bg-gradient-to-r from-blue-400 to-purple-400 h-screen w-screen relative overflow-hidden">
+        <div class="absolute h-screen w-screen top-0 left-0 grid place-items-center">
+            <div class="flex flex-col gap-2 items-center">
+                <h2 class="text-3xl font-semibold text-white">Message Sent!</h2>
+                <a href="/" class="p-2 rounded bg-white">Return Home</a>
+            </div>
+        </div>
+        <Bubbles class="absolute top-0 left-0 h-full" client:only />
+        <WavesAnimation class="absolute bottom-0 left-0 -translate-y-[100%]" client:only />
 	</body>
 </html>
