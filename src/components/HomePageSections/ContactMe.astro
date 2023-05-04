@@ -5,7 +5,7 @@
     </div>
     <span class="flex gap-4 w-full flex-col sm:flex-row">
         <div class="sm:max-w-[40ch] flex flex-col justify-start">
-            <span class="text-slate-500 mb-2 text-sm">
+            <span class="text-slate-500 mb-2 text-sm dark:text-slate-200 dark:font-thin">
                 <p>e: justin.arnold@prgrammer.net</p>
                 <p>p: (888) 555 - 1234</p>
             </span>
@@ -14,11 +14,11 @@
         </div>
         <form name="contact" data-netlify="true" action="/success" method="POST" class="flex flex-col grow">
             <label for="name">Name</label>
-            <input id="name" name="name" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 mb-2">
+            <input id="name" name="name" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 mb-2  dark:text-black">
             <label for="email">Email</label>
-            <input id="email" name="email" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 mb-2"/>
+            <input id="email" name="email" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 mb-2  dark:text-black"/>
             <label for="body">Message</label>
-            <textarea id="body" name="body" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 h-[200px] mb-4"/>
+            <textarea id="body" name="body" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 h-[200px] mb-4  dark:text-black"/>
             <button class="bg-gradient-to-r from-blue-400 to-purple-500 text-white font-semibold rounded p-2">Send</button>
         </form>
     </span>
