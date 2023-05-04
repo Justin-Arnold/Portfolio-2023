@@ -48,8 +48,8 @@ const companies: {name: string, url: string}[] = [
         <div class="bg-gradient-to-r from-blue-400 to-purple-500 h-[1px] rounded grow w-full"></div>
     </div>
     <span class=" flex flex-col mb-48">
-        <div class="flex gap-8">
-            <div class="tab-buttons flex flex-col w-fit shrink-0">
+        <div class="flex gap-8 flex-col sm:flex-row">
+            <div class="tab-buttons flex sm:flex-col w-fit shrink-0 flex-wrap">
                 <div data-tab-1-button class="tab-button active">Gradecam</div>
                 <div data-tab-2-button class="tab-button">NuCamp</div>
                 <div data-tab-3-button class="tab-button">eWebData</div>
@@ -57,7 +57,7 @@ const companies: {name: string, url: string}[] = [
                 <div data-tab-5-button class="tab-button">Storage Express</div>
                 <div data-tab-6-button class="tab-button">Misc. Freelancng</div>
             </div>
-            <div class="tab-contents h-[400px] overflow-y-hidden pl-1">
+            <div class="tab-contents h-[400px] sm:overflow-y-hidden pl-1">
                 <div data-tab-1-content class="tab-content visible">
                     <h4 class="text-xl">Software Engineer</h4>
                     <p class="text-slate-400 text-sm">Feb 2022 - Present</p>
