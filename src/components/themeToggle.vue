@@ -2,6 +2,17 @@
 import { ref, watchEffect } from 'vue';
 
 const isDark = ref(true);
+const belowFold = ref(false);
+
+//if page has been scrolled more then 1 screen in height adjust boolean, using a listener
+window.addEventListener('scroll', () => {
+    if (window.scrollY > window.innerHeight) {
+        belowFold.value = true;
+    } else {
+        belowFold.value = false;
+    }
+});
+
 
 watchEffect(() => {
     if (!isDark.value) {
@@ -15,7 +26,8 @@ watchEffect(() => {
 </script>
 
 <template>
-    <input v-model="isDark" class="appearance-none outline-none cursor-pointer w-[var(--size)] h-[var(--size)] rounded-full text-slate-50 transition-all duration-500 checked:scale-75" type="checkbox">
+    <input v-model="isDark" class="appearance-none outline-none cursor-pointer w-[var(--size)] h-[var(--size)] rounded-full transition-all duration-500 checked:scale-75" type="checkbox"
+    :class="belowFold ? 'text-yellow-500' : 'text-slate-50'">
 </template>
 
 
