@@ -47,7 +47,7 @@ const companies: {name: string, url: string}[] = [
         <h1 class="text-3xl font-bold whitespace-nowrap">Companies I've worked with</h1>
         <div class="bg-gradient-to-r from-blue-400 to-purple-500 h-[1px] rounded grow w-full"></div>
     </div>
-    <span class=" flex flex-col mb-48 h-[400px]">
+    <span class=" flex flex-col mb-48">
         <div class="flex gap-8">
             <div class="tab-buttons flex flex-col w-fit shrink-0">
                 <div data-tab-1-button class="tab-button active">Gradecam</div>
@@ -57,8 +57,8 @@ const companies: {name: string, url: string}[] = [
                 <div data-tab-5-button class="tab-button">Storage Express</div>
                 <div data-tab-6-button class="tab-button">Misc. Freelancng</div>
             </div>
-            <div class="tab-contents h-full">
-                <div data-tab-1-content class="tab-content visible -mt-1">
+            <div class="tab-contents h-[400px] overflow-y-hidden pl-1">
+                <div data-tab-1-content class="tab-content visible">
                     <h4 class="text-xl">Software Engineer</h4>
                     <p class="text-slate-400 text-sm">Feb 2022 - Present</p>
                     <div class="text-xs font-regular text-slate-800 flex gap-2 flex-wrap my-2">
@@ -69,14 +69,14 @@ const companies: {name: string, url: string}[] = [
                         <span class="p-2 bg-slate-100 rounded">Storybook</span>
                         <span class="p-2 bg-slate-100 rounded">MongoDB</span>
                     </div>
-                    <ul class="list-disc w-full">
+                    <ul class="list-disc w-full h-full overflow-y-auto">
                         <li>Rearchitected current in-house component library doubling development environment performance, and reducing bundle size by 80%.</li>
                         <li>Helped migrate the main product from AngularJS to Vue 3, with a strong focus on reducing complexity of the codebase to increase readability and maintainability.</li>
                         <li>Designed several new product features, prioritizing user-friendly workflows, actionable data, and accelerated onboarding speed.</li>
                         <li>Established and maintained documentation for the component library and design system using Storybook.</li>
                     </ul>
                 </div>
-                <div data-tab-2-content class="tab-content -mt-1">
+                <div data-tab-2-content class="tab-content">
                     <h4 class="text-xl">Course Instructor</h4>
                     <p class="text-slate-400 text-sm">December 2021 - February 2023</p>
                     <div class="text-xs font-regular text-slate-800 flex gap-2 flex-wrap my-2">
@@ -86,7 +86,7 @@ const companies: {name: string, url: string}[] = [
                         <span class="p-2 bg-slate-100 rounded">HTML / CSS</span>
                         <span class="p-2 bg-slate-100 rounded">Sqlite</span>
                     </div>
-                    <ul class="list-disc w-full">
+                    <ul class="list-disc w-full h-full overflow-y-auto">
                         <li>Instructed 60+ students spanning 5 courses.</li>
                         <li>Delivered a range of courses, such as Web Development Fundamentals and Introduction to Data Structures and Algorithms.</li>
                         <li>Transformed curricula into into highly engaging presentations and activities to foster a passion for learning.</li>
@@ -103,7 +103,7 @@ const companies: {name: string, url: string}[] = [
                         <span class="p-2 bg-slate-100 rounded">MongoDB</span>
                         <span class="p-2 bg-slate-100 rounded">Tailwind</span>
                     </div>
-                    <ul class="list-disc w-full">
+                    <ul class="list-disc w-full h-full overflow-y-auto">
                         <li>Updated and maintained a web application in Vue 3 for aggregating and enriching visitor data for car dealers for lead generation.</li>
                         <li>Developed a user-friendly API, enabling dealers to seamlessly integrate data into subsequent lead management platforms.</li>
                         <li>Maintained Java backend using Spring.</li>
@@ -120,7 +120,7 @@ const companies: {name: string, url: string}[] = [
                         <span class="p-2 bg-slate-100 rounded">HTML / CSS</span>
                         <span class="p-2 bg-slate-100 rounded">Javascript</span>
                     </div>
-                    <ul class="list-disc w-full">
+                    <ul class="list-disc w-full h-full overflow-y-auto">
                         <li>Developed a Python desktop application as a user-friendly interface for the Cisco CUCM API, streamlining workflows for the hospital's Unified Communications team.</li>
                         <li>Designed an inventory management system for efficient tracking and organization of phones and networking equipment within the U.C. team.</li>
                         <li>Implemented a web interface for convenient remote access to the inventory management system both on and off-campus.</li>
@@ -138,7 +138,7 @@ const companies: {name: string, url: string}[] = [
                         <span class="p-2 bg-slate-100 rounded">HTML / CSS</span>
                         <span class="p-2 bg-slate-100 rounded">Flask</span>
                     </div>
-                    <ul class="list-disc w-full">
+                    <ul class="list-disc w-full h-full overflow-y-auto">
                         <li>Developed an IT staff portal for comprehensive management of devices across 200+ remote properties, including DVR systems, wireless radios, kiosks, and gate entry systems.</li>
                         <li>Created a status dashboard displayed at headquarters, enabling real-time monitoring and rapid response to outages of critical equipment at remote locations.</li>
                         <li>Delivered remote technical support for maintenance teams, assisting with on-site hardware troubleshooting and ensuring optimal performance.</li>
@@ -156,7 +156,7 @@ const companies: {name: string, url: string}[] = [
                         <span class="p-2 bg-slate-100 rounded">Sqlite</span>
                         <span class="p-2 bg-slate-100 rounded">HTML / CSS</span>
                     </div>
-                    <ul class="list-disc w-full">
+                    <ul class="list-disc w-full h-full overflow-y-auto">
                         <li>Built a web application for comprehensive search, view, and edit capabilities of lute sheet music, catering to musicians' specific needs.</li>
                         <li>Crafted numerous static content-driven websites for diverse businesses, including photography studios, coffee shops, blogs, and company home pages.</li>
                         <li>Developed a Python desktop application for a chess instructor to conduct live remote games with students while providing real-time chat instruction during gameplay.</li>
