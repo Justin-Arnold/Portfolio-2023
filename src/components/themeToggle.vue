@@ -16,17 +16,37 @@ window.addEventListener('scroll', () => {
 
 watchEffect(() => {
     if (!isDark.value) {
-        console.log('dark');
         document.documentElement.classList.add('dark');
     } else {
-        console.log('light');
         document.documentElement.classList.remove('dark');
     }
 });
+
+const updateDarkMode = () => {
+    if (isDark.value) {
+        localStorage.setItem('prefer-dark', 'false');
+    } else {
+        localStorage.setItem('prefer-dark', 'true');
+    }
+};
+
+if (localStorage.getItem('prefer-dark') === 'true') {
+    isDark.value = true;
+} else if (localStorage.getItem('prefer-dark') === 'false') {
+    isDark.value = false;
+} else {
+    //if no preference is set, check for system preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        isDark.value = false;
+        localStorage.setItem('prefer-dark', 'false');
+    } else {
+        isDark.value = true;
+    }
+}
 </script>
 
 <template>
-    <input v-model="isDark" class="appearance-none outline-none cursor-pointer w-[var(--size)] h-[var(--size)] rounded-full transition-all duration-500 checked:scale-75" type="checkbox"
+    <input v-model="isDark" @click="updateDarkMode" class="appearance-none outline-none cursor-pointer w-[var(--size)] h-[var(--size)] rounded-full transition-all duration-500 checked:scale-75" type="checkbox"
     :class="belowFold ? 'text-yellow-500' : 'text-slate-50'">
 </template>
 
