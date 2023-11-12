@@ -1,5 +1,5 @@
 <template>
-    <div class="after:h-[300vh] after:w-[100vw] after:absolute after:content-[''] after:text-white/0 after:bg-white" :class="cssOpacityValue">
+    <div class="after:h-[100vh] after:w-[100vw] after:absolute after:content-[''] after:text-white/0 after:bg-white" :class="cssOpacityValue">
         <svg class="relative w-full h-[15vh] min-h-[100px] max-h-[150px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
