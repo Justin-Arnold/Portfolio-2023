@@ -2,7 +2,8 @@
 import BaseInputText from "../BaseInputText.astro";
 import BaseLabel from "../BaseLabel.astro";
 import BaseTextarea from "../BaseTextarea.astro";
-
+import BaseForm from "../BaseForm.astro";
+import BaseButton from "../BaseButton.astro";
 ---
 
 <div id="anchor-contact-section" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="400" data-aos-mirror="true" class="w-full flex flex-col justify-center items-start my-48">
@@ -18,7 +19,7 @@ import BaseTextarea from "../BaseTextarea.astro";
             </span>
             <p>I'm eager to explore fresh, innovative collaborations and connect with like-minded individuals. If you're curious about my design or development skills, interested in joining forces on an open-source endeavor, or just want to drop a friendly hello, don't hesitate to reach out. I typically respond within a day, so let's start a conversation that could lead to something amazing!</p>
         </div>
-        <form name="contact" action="https://formspree.io/f/xoqozqqe" method="POST" class="flex flex-col grow">
+        <BaseForm name="contact" action="https://formspree.io/f/xoqozqqe" method="POST">
             <BaseLabel>
                 Name
                 <BaseInputText name="name" placeholder="Your name here" required />
@@ -34,7 +35,7 @@ import BaseTextarea from "../BaseTextarea.astro";
                 <BaseTextarea name="body" class="p-2 rounded bg-gradient-to-r from-blue-50 to-purple-50 h-[200px] mb-4 dark:text-black w-full"/>
             </BaseLabel>
 
-            <button type="submit" class="bg-gradient-to-r from-blue-400 to-purple-500 text-white font-semibold rounded p-2">Send</button>
+            <BaseButton type="submit">Send</button>
         </form>
     </span>
 </div>
