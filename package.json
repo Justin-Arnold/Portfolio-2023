@@ -25,6 +25,7 @@
     "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.4"
+    "@types/aos": "^3.0.4",
+    "daisyui": "^3.9.4"
   }
 }
