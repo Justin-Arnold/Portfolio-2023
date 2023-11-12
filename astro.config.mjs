@@ -1,12 +1,8 @@
+import sanity from "@sanity/astro";
 import { defineConfig } from 'astro/config';
-
-// https://astro.build/config
 import tailwind from "@astrojs/tailwind";
-
-// https://astro.build/config
 import vue from "@astrojs/vue";
 
-// https://astro.build/config
 export default defineConfig({
     experimental: {
         assets: true
@@ -17,6 +13,12 @@ export default defineConfig({
                 applyBaseStyles: false
             }
         }),
-        vue()
+        vue(),
+        sanity({
+            projectId: 'lcxq2gzs',
+            dataset: 'production',
+            apiVersion: '2023-02-08',
+            useCdn: false,
+        })
     ]
 });
