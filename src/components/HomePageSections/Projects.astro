@@ -1,5 +1,6 @@
 ---
 import { sanityClient } from "sanity:client";
+import { Icon } from "astro-icon";
 
 const projects = await sanityClient.fetch(`*[_type == "project"]`)
 console.log(projects[0].links[0].name)
@@ -23,7 +24,9 @@ console.log(projects[0].links[0].name)
                 <div class="flex flex-grow flex-col justify-end">
                     <div class="flex justify-end gap-2">
                         {project.links.map((link: any) => (
-                            <a class="rounded bg-blue-100 p-1 text-blue-900" href={link.url}>{link.name}</a>
+                            <a href={link.url}>
+                                <Icon class="hover:scale-110" size="32px" title={link.name}  name={link.icon} />
+                            </a>
                         ))}
                     </div>
                 </div>
