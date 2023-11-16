@@ -1,6 +1,6 @@
 <template>
-    <div class="after:h-[100vh] after:w-[100vw] after:absolute after:content-[''] after:text-white/0 after:bg-white" :class="cssOpacityValue">
-        <svg class="relative w-full h-[15vh] min-h-[100px] max-h-[150px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <div class="after:absolute after:h-[100vh] after:w-[100vw] after:bg-white after:text-white/0 after:content-['']" :class="cssOpacityValue">
+        <svg class="relative h-[15vh] max-h-[150px] min-h-[100px] w-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />

@@ -46,7 +46,7 @@ if (localStorage.getItem('prefer-dark') === 'true') {
 </script>
 
 <template>
-    <input v-model="isDark" @click="updateDarkMode" class="appearance-none outline-none cursor-pointer w-[var(--size)] h-[var(--size)] rounded-full transition-all duration-500 checked:scale-75" type="checkbox"
+    <input v-model="isDark" @click="updateDarkMode" class="h-[var(--size)] w-[var(--size)] cursor-pointer appearance-none rounded-full outline-none transition-all duration-500 checked:scale-75" type="checkbox"
     :class="belowFold ? 'text-yellow-500' : 'text-slate-50'">
 </template>
 

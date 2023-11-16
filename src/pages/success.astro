@@ -5,11 +5,11 @@ import WavesAnimation from "../components/WavesAnimation.vue";
 ---
 <html lang="en">
 	<AppHead></AppHead>
-	<body class="bg-gradient-to-r from-blue-400 to-purple-400 h-screen w-screen relative overflow-hidden">
-        <div class="absolute h-screen w-screen top-0 left-0 grid place-items-center">
-            <div class="flex flex-col gap-2 items-center">
+	<body class="relative h-screen w-screen overflow-hidden bg-gradient-to-r from-blue-400 to-purple-400">
+        <div class="absolute top-0 left-0 grid h-screen w-screen place-items-center">
+            <div class="flex flex-col items-center gap-2">
                 <h2 class="text-3xl font-semibold text-white">Message Sent!</h2>
-                <a href="/" class="p-2 rounded bg-white">Return Home</a>
+                <a href="/" class="rounded bg-white p-2">Return Home</a>
             </div>
         </div>
         <Bubbles class="absolute top-0 left-0 h-full" client:only />
