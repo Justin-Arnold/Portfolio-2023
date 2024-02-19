@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon";
+
+const { blok } = Astro.props
+console.log('ll', blok)
+---
+<div class="flex h-40 flex-col gap-1 rounded bg-blue-400 p-2 text-lg font-semibold sm:aspect-square sm:h-auto">
+    <span>{blok.name}</span>
+    <div class="font-regular flex flex-wrap gap-2 text-xs text-slate-800">
+        {blok.technologies.value.map((tag: any) => (
+            <span class="p-2 bg-slate-50 rounded">{tag}</span>
+        ))}
+    </div>
+    <p class="text-sm font-thin">{blok.description}</p>
+    <div class="flex flex-grow flex-col justify-end">
+        <div class="flex justify-end gap-2">
+            <a href={blok.github_url.url}>
+                <Icon class="hover:scale-110" size="32px" name="mdi:github" />
+            </a>
+            <a href={blok.live_url.url}>
+                <Icon class="hover:scale-110" size="32px" name="tabler:external-link" />
+            </a>
+        </div>
+    </div>
+</div>
