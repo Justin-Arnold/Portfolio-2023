@@ -1,18 +1,15 @@
 ---
-import { Icon } from "astro-icon";
-import { storyblokEditable } from '@storyblok/astro'
 import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
 
 const { blok } = Astro.props
-console.log('b', blok)
 ---
 
 <div class="flex w-full flex-col items-start justify-center" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="400" data-aos-mirror="true">
     <div class="mb-4 flex w-full items-center gap-2">
         <h1 class="text-3xl font-bold sm:whitespace-nowrap">{blok.header}</h1>
-        <div class="h-[1px] w-full grow rounded bg-gradient-to-r from-blue-400 to-purple-500"></div>
+        <div class="h-[1px] w-full grow rounded bg-gradient-to-r from-secondary to-primary"></div>
     </div>
-    <div class="grid w-full grid-cols-1 grid-rows-auto gap-4 overflow-hidden text-white sm:grid-cols-3 sm:grid-rows-1">
+    <div class="grid w-full grid-cols-1 grid-rows-auto gap-4 overflow-hidden sm:grid-cols-3 sm:grid-rows-1">
         {blok.projects.map((project: any) => (
             <StoryblokComponent blok={project} />
         ))}

@@ -4,16 +4,16 @@ import { Icon } from "astro-icon";
 const { blok } = Astro.props
 ---
 
-<div class="card bg-blue-400 shadow-md">
+<div class="card bg-gradient-to-b from-primary to-secondary shadow-md">
     <div class="card-body">
         <span class="card-title">{blok.name}</span>
-        <div class="font-regular flex flex-wrap gap-2 text-xs text-slate-800">
+        <p class="grow-0">{blok.description}</p>
+        <div class="flex flex-wrap gap-2 text-slate-800 mb-auto">
             {blok.technologies.value.map((tag: any) => (
-                <span class="p-2 bg-slate-50 rounded">{tag}</span>
+                <span class="p-2 bg-slate-50 rounded text-xs">{tag}</span>
             ))}
         </div>
-        <p class="text-sm font-thin">{blok.description}</p>
-        <div class="flex flex-grow flex-col justify-end">
+        <div class="card-actions justify-end">
             <div class="flex justify-end gap-2">
                 <a href={blok.github_url.url}>
                     <Icon class="hover:scale-110" size="32px" name="mdi:github" />
