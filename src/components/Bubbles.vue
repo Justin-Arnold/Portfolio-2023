@@ -5,7 +5,8 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onBeforeMount, ref, Ref } from 'vue'
+import { onMounted, onBeforeMount, ref } from 'vue'
+import type { Ref } from 'vue'
 
 const width = ref(0)
 const height = ref(0)

@@ -4,9 +4,9 @@ import tailwind from "@astrojs/tailwind";
 import vue from "@astrojs/vue";
 
 export default defineConfig({
-    experimental: {
-        assets: true
-    },
+    // experimental: {
+    //     assets: true
+    // },
     integrations: [
         tailwind({
             config: {
