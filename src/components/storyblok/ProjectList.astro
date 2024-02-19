@@ -12,7 +12,7 @@ console.log('b', blok)
         <h1 class="text-3xl font-bold sm:whitespace-nowrap">{blok.header}</h1>
         <div class="h-[1px] w-full grow rounded bg-gradient-to-r from-blue-400 to-purple-500"></div>
     </div>
-    <div class="grid w-full grid-cols-1 grid-rows-3 gap-4 overflow-hidden text-white sm:grid-cols-3 sm:grid-rows-1">
+    <div class="grid w-full grid-cols-1 grid-rows-auto gap-4 overflow-hidden text-white sm:grid-cols-3 sm:grid-rows-1">
         {blok.projects.map((project: any) => (
             <StoryblokComponent blok={project} />
         ))}
