@@ -19,3 +19,9 @@
         grid-column: 1 / 4;
     }
 }
+
+@layer components {
+    .chip {
+        @apply p-2 bg-slate-50 rounded text-xs
+    }
+}

@@ -10,7 +10,7 @@ const { blok } = Astro.props
         <p class="grow-0">{blok.description}</p>
         <div class="flex flex-wrap gap-2 text-slate-800 mb-auto">
             {blok.technologies.value.map((tag: any) => (
-                <span class="p-2 bg-slate-50 rounded text-xs">{tag}</span>
+                <span class="chip">{tag}</span>
             ))}
         </div>
         <div class="card-actions justify-end">
