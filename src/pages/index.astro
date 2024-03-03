@@ -19,12 +19,13 @@ const { data } = await storyblokApi.get("cdn/stories/home", {
 const content = data.story.content;
 
 const projectsList = content.body.find((blok: any) => blok.component === 'project_list')
+const heroSection = content.body.find((blok: any) => blok.component === 'hero_section')
 ---
 <html lang="en">
 	<AppHead></AppHead>
-	<body class=" bg-white overflow-x-hidden text-slate-900 dark:bg-slate-700 dark:text-white" data-theme="night">
+	<body class="bg-white overflow-x-hidden text-slate-900 dark:bg-slate-700 dark:text-white" data-theme="night">
         <Header></Header>
-        <AboveTheFold></AboveTheFold>
+        <AboveTheFold blok={heroSection}></AboveTheFold>
         <section class="wrapper relative z-[10] dark:bg-slate-700">
             <AboutMe></AboutMe>
             <PastWork></PastWork>

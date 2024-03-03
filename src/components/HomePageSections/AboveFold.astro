@@ -1,21 +1,13 @@
 ---
 import Bubbles from "../Bubbles.vue";
 import WavesAnimation from "../WavesAnimation.vue";
-import { sanityClient } from "sanity:client";
+import HomeSection from "../storyblok/HomeSection.astro";
 
-const homePageContentResp = await sanityClient.fetch(`*[_type == "homePage"]`)
-const homePageContent = homePageContentResp[0];
+const { blok } = Astro.props
 ---
 <div class="h-screen relative bg-gradient-to-r from-primary to-secondary dark:from-primary/60 dark:to-secondary/60">
     <div class="absolute wrapper h-screen w-screen">
-        <div class="h-full w-full grid place-items-center">
-            <div class="flex flex-col justify-center items-start sm:gap-2">
-                <h1 class="text-4xl sm:text-[80px] sm:my-6 font-bold text-white ">{ homePageContent.name }</h1>
-                <h2 class="text-3xl sm:text-[50px] text-slate-800/60 dark:text-slate-400">{ homePageContent.title }</h2>
-                <p class="sm:text-xl text-white max-w-[40ch]">{ homePageContent.tagline }</p>
-                <a href="#anchor-contact-section" class="rounded bg-white/80 p-3 mt-2 text-slate-800/80">{ homePageContent.callToAction }</a>
-            </div>
-        </div>
+    	<HomeSection blok={blok} />
     </div>
     <Bubbles class="absolute top-0 left-0 h-full" client:only />
     <WavesAnimation class="absolute bottom-0 left-0 -translate-y-[100%]" client:only />

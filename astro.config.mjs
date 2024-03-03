@@ -37,11 +37,5 @@ export default defineConfig({
             }
         }),
         vue(),
-        sanity({
-            projectId: 'lcxq2gzs',
-            dataset: 'production',
-            apiVersion: '2023-02-08',
-            useCdn: false,
-        })
     ]
 });
