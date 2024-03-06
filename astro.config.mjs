@@ -1,15 +1,16 @@
-import sanity from "@sanity/astro";
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import vue from "@astrojs/vue";
-import basicSsl from '@vitejs/plugin-basic-ssl';
+import mkcert from 'vite-plugin-mkcert'
 import tailwindcssNesting from 'tailwindcss/nesting';
 import storyblok from '@storyblok/astro';
-import { loadEnv } from 'vite';
+import * as dotenv from 'dotenv'
+
+dotenv.config()
 
 export default defineConfig({
     vite: {
-        plugins: [basicSsl()],
+        plugins: [mkcert()],
         server: {
             https: true
         },
@@ -26,7 +27,7 @@ export default defineConfig({
             }
         }),
         storyblok({
-            accessToken: process.env.STORYBLOK_TOKEN,
+            accessToken: import.meta.env.STORYBLOK_TOKEN,
             bridge: import.meta.env.VITE_ENVIRONMENT === "preview" ? true : false,
             apiOptions: {
                 region: "us"
