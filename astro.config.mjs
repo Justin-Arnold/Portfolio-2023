@@ -5,11 +5,14 @@ import mkcert from 'vite-plugin-mkcert'
 import tailwindcssNesting from 'tailwindcss/nesting';
 import { squooshImageService } from "astro/config";
 import storyblok from '@storyblok/astro';
+import vercelStatic from '@astrojs/vercel/static';
 import * as dotenv from 'dotenv'
 
 dotenv.config()
 
 export default defineConfig({
+    output: 'static',
+    adapter: vercelStatic(),
     vite: {
         plugins: [mkcert()],
         server: {
