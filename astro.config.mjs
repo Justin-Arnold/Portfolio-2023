@@ -3,6 +3,7 @@ import tailwind from "@astrojs/tailwind";
 import vue from "@astrojs/vue";
 import mkcert from 'vite-plugin-mkcert'
 import tailwindcssNesting from 'tailwindcss/nesting';
+import { squooshImageService } from "astro/config";
 import storyblok from '@storyblok/astro';
 import * as dotenv from 'dotenv'
 
@@ -19,6 +20,9 @@ export default defineConfig({
                 plugins: [tailwindcssNesting()]
             }
         }
+    },
+    image: {
+        service: squooshImageService(),
     },
     integrations: [
         tailwind({
