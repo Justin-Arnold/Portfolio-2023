@@ -34,7 +34,7 @@ export default defineConfig({
             }
         }),
         storyblok({
-            accessToken: import.meta.env.STORYBLOK_TOKEN ?? process.env.STORYBLOK_TOKEN,
+            accessToken: import.meta.env.STORYBLOK_TOKEN,
             bridge: import.meta.env.VITE_ENVIRONMENT === "preview" ? true : false,
             apiOptions: {
                 region: "us"

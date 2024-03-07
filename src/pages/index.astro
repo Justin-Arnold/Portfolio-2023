@@ -13,7 +13,7 @@ import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
 const storyblokApi = useStoryblokApi()
 
 const { data } = await storyblokApi.get("cdn/stories/home", {
-    version: import.meta.env.DEV || import.meta.env.VITE_ENVIRONMENT === 'preview' ? "draft" : "published",
+    version: import.meta.env.MODE === "production" ? "published" : "draft",
 });
 
 const content = data.story.content;
