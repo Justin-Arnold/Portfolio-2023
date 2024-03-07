@@ -23,10 +23,10 @@ const heroSection = content.body.find((blok: any) => blok.component === 'hero_se
 ---
 <html lang="en">
 	<AppHead></AppHead>
-	<body class="bg-white overflow-x-hidden text-slate-900 dark:bg-slate-700 dark:text-white" data-theme="night">
+	<body class="bg-white overflow-x-hidden text-slate-900 dark:bg-base-100 dark:text-white" data-theme="night">
         <Header></Header>
         <AboveTheFold blok={heroSection}></AboveTheFold>
-        <section class="wrapper relative z-[10] dark:bg-slate-700">
+        <section class="wrapper relative z-[10] dark:bg-base-100">
             <AboutMe></AboutMe>
             <PastWork></PastWork>
             <StoryblokComponent blok={projectsList} />

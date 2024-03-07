@@ -31,17 +31,17 @@ const svgOpacityValue = computed(() => {
     //switch statement for props.opacity
     switch (props.opacity) {
         case '10':
-            return props.color === 'white' ? 'fill-white/10 dark:fill-slate-700/10' : 'fill-blue-500/10 dark:fill-slate-700/10'
+            return props.color === 'white' ? 'fill-white/10 dark:fill-base-100/10' : 'fill-blue-500/10 dark:fill-base-100/10'
         case '30':
-            return props.color === 'white' ? 'fill-white/30 dark:fill-slate-700/30' : 'fill-blue-500/30 dark:fill-slate-700/30'
+            return props.color === 'white' ? 'fill-white/30 dark:fill-base-100/30' : 'fill-blue-500/30 dark:fill-base-100/30'
         case '50':
-            return props.color === 'white' ? 'fill-white/50 dark:fill-slate-700/50' : 'fill-blue-500/50 dark:fill-slate-700/50'
+            return props.color === 'white' ? 'fill-white/50 dark:fill-base-100/50' : 'fill-blue-500/50 dark:fill-base-100/50'
         case '70':
-            return props.color === 'white' ? 'fill-white/70 dark:fill-slate-700/70' : 'fill-blue-500/70 dark:fill-slate-700/70'
+            return props.color === 'white' ? 'fill-white/70 dark:fill-base-100/70' : 'fill-blue-500/70 dark:fill-base-100/70'
         case '90':
-            return props.color === 'white' ? 'fill-white/90 dark:fill-slate-700/90' : 'fill-blue-500/90 dark:fill-slate-700/90'
+            return props.color === 'white' ? 'fill-white/90 dark:fill-base-100/90' : 'fill-blue-500/90 dark:fill-base-100/90'
         default:
-            return props.color === 'white' ? 'fill-white dark:fill-slate-700' : 'fill-blue-500 dark:fill-slate-700'
+            return props.color === 'white' ? 'fill-white dark:fill-base-100' : 'fill-blue-500 dark:fill-base-100'
     }
 })
 
@@ -49,15 +49,15 @@ const cssOpacityValue = computed(() => {
     //switch statement for props.opacity
     switch (props.opacity) {
         case '10':
-            return props.color === 'white' ? 'after:bg-white/10 after:dark:bg-slate-700/10' : 'after:bg-blue-500/10 after:dark:bg-slate-700/10'
+            return props.color === 'white' ? 'after:bg-white/10 after:dark:bg-base-100/10' : 'after:bg-blue-500/10 after:dark:bg-base-100/10'
         case '30':
-            return props.color === 'white' ? 'after:bg-white/30 after:dark:bg-slate-700/30' : 'after:bg-blue-500/30 after:dark:bg-slate-700/30'
+            return props.color === 'white' ? 'after:bg-white/30 after:dark:bg-base-100/30' : 'after:bg-blue-500/30 after:dark:bg-base-100/30'
         case '50':
-            return props.color === 'white' ? 'after:bg-white/50 after:dark:bg-slate-700/50' : 'after:bg-blue-500/50 after:dark:bg-slate-700/50'
+            return props.color === 'white' ? 'after:bg-white/50 after:dark:bg-base-100/50' : 'after:bg-blue-500/50 after:dark:bg-base-100/50'
         case '70':
-            return props.color === 'white' ? 'after:bg-white/70 after:dark:bg-slate-700/70' : 'after:bg-blue-500/70 after:dark:bg-slate-700/70'
+            return props.color === 'white' ? 'after:bg-white/70 after:dark:bg-base-100/70' : 'after:bg-blue-500/70 after:dark:bg-base-100/70'
         case '90':
-            return props.color === 'white' ? 'bg-white/90 dark:bg-slate-700/90' : 'bg-blue-500/90 dark:bg-slate-700/90'
+            return props.color === 'white' ? 'bg-white/90 dark:bg-base-100/90' : 'bg-blue-500/90 dark:bg-base-100/90'
         default:
             return ''
     }

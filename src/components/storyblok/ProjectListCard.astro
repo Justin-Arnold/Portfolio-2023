@@ -4,21 +4,21 @@ import { Icon } from "astro-icon";
 const { blok } = Astro.props
 ---
 
-<div class="card bg-gradient-to-b from-primary to-secondary shadow-md">
+<div class="card bg-base-content dark:bg-neutral shadow-md h-[]">
     <div class="card-body">
         <span class="card-title">{blok.name}</span>
-        <p class="grow-0">{blok.description}</p>
+        <p class="grow-0 font-thin">{blok.description}</p>
         <div class="flex flex-wrap gap-2 text-slate-800 mb-auto">
             {blok.technologies.value.map((tag: any) => (
-                <span class="chip">{tag}</span>
+                <span class="chip bg-gradient-to-l from-primary to-secondary">{tag}</span>
             ))}
         </div>
         <div class="card-actions justify-end">
             <div class="flex justify-end gap-2">
-                <a href={blok.github_url.url}>
+                <a href={blok.github_url.url} class={blok.github_url.url ? 'visble' : "hidden"}>
                     <Icon class="hover:scale-110" size="32px" name="mdi:github" />
                 </a>
-                <a href={blok.live_url.url}>
+                <a href={blok.live_url.url} class={blok.live_url.url ? 'visble' : "hidden"}>
                     <Icon class="hover:scale-110" size="32px" name="tabler:external-link" />
                 </a>
             </div>
