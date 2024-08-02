@@ -1,5 +1,5 @@
 <template>
-    <div ref="waveWrapper" class="relative h-[15vh] w-full translate-y-[-100%]">
+    <div ref="waveWrapper" class="relative h-[15vh] w-full top-[100vh]">
         <div ref="wave1" class="absolute bottom-0 left-0 w-full">
             <Wave ref="wave1" height="xl" opacity="30" :animationDuration="7" :animationOffset="-2"/>
         </div>
