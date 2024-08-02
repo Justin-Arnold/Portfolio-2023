@@ -6,9 +6,9 @@ import tailwindcssNesting from 'tailwindcss/nesting';
 import { squooshImageService } from "astro/config";
 import storyblok from '@storyblok/astro';
 import vercelStatic from '@astrojs/vercel/static';
-import * as dotenv from 'dotenv'
+import { loadEnv } from "vite";
 
-dotenv.config()
+const { STORYBLOK_TOKEN } = loadEnv(process.env.NODE_ENV, process.cwd(), "");
 
 export default defineConfig({
     output: 'static',
@@ -34,7 +34,7 @@ export default defineConfig({
             }
         }),
         storyblok({
-            accessToken: import.meta.env.STORYBLOK_TOKEN,
+            accessToken: import.meta.env.STORYBLOK_TOKEN || STORYBLOK_TOKEN,
             bridge: import.meta.env.VITE_ENVIRONMENT === "preview" ? true : false,
             apiOptions: {
                 region: "us"
