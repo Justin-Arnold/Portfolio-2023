@@ -9,8 +9,8 @@ const { blok } = Astro.props
     <div class="absolute wrapper h-screen w-screen">
     	<HomeSection blok={blok} />
     </div>
-    <Bubbles class="absolute top-0 left-0 h-full" client:only />
-    <WavesAnimation class="absolute bottom-0 left-0 -translate-y-[100%]" client:only />
+    <Bubbles class="absolute top-0 left-0 h-full" client:only="vue" />
+    <WavesAnimation class="absolute bottom-0 left-0 -translate-y-[100%]" client:only="vue" />
 </div>
 
 <style>
